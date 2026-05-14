@@ -10,11 +10,13 @@ import VendorLayout from './components/layout/VendorLayout';
 import Landing from './pages/student/Landing';
 import Login from './pages/student/Login';
 import Signup from './pages/student/Signup';
+import Browse from './pages/student/Browse';
+import VehicleDetail from './pages/student/VehicleDetail';
+import BookingConfirmation from './pages/student/BookingConfirmation';
 
 // Placeholder pages (will be replaced in later tasks)
 import {
-  Browse, VehicleDetail,
-  BookingConfirmation, ActiveRide, Return, TripHistory, Profile,
+  ActiveRide, Return, TripHistory, Profile,
   VendorLogin, VendorSignup, VendorDashboard, Inventory,
   VehicleForm, VendorBookings, Analytics, GeofenceAlerts,
 } from './pages/Placeholders';
