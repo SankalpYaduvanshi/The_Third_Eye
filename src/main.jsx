@@ -6,9 +6,14 @@ import './index.css';
 import StudentLayout from './components/layout/StudentLayout';
 import VendorLayout from './components/layout/VendorLayout';
 
-// Import placeholder pages (will be replaced with real pages in later tasks)
+// Student pages
+import Landing from './pages/student/Landing';
+import Login from './pages/student/Login';
+import Signup from './pages/student/Signup';
+
+// Placeholder pages (will be replaced in later tasks)
 import {
-  Landing, Login, Signup, Browse, VehicleDetail,
+  Browse, VehicleDetail,
   BookingConfirmation, ActiveRide, Return, TripHistory, Profile,
   VendorLogin, VendorSignup, VendorDashboard, Inventory,
   VehicleForm, VendorBookings, Analytics, GeofenceAlerts,
