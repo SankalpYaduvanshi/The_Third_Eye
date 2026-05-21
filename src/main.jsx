@@ -13,13 +13,20 @@ import Signup from './pages/student/Signup';
 import Browse from './pages/student/Browse';
 import VehicleDetail from './pages/student/VehicleDetail';
 import BookingConfirmation from './pages/student/BookingConfirmation';
+import ActiveRide from './pages/student/ActiveRide';
+import Return from './pages/student/Return';
+import TripHistory from './pages/student/TripHistory';
+import Profile from './pages/student/Profile';
 
-// Placeholder pages (will be replaced in later tasks)
-import {
-  ActiveRide, Return, TripHistory, Profile,
-  VendorLogin, VendorSignup, VendorDashboard, Inventory,
-  VehicleForm, VendorBookings, Analytics, GeofenceAlerts,
-} from './pages/Placeholders';
+// Vendor pages
+import VendorLogin from './pages/vendor/VendorLogin';
+import VendorSignup from './pages/vendor/VendorSignup';
+import Dashboard from './pages/vendor/Dashboard';
+import Inventory from './pages/vendor/Inventory';
+import VehicleForm from './pages/vendor/VehicleForm';
+import Bookings from './pages/vendor/Bookings';
+import Analytics from './pages/vendor/Analytics';
+import GeofenceAlerts from './pages/vendor/GeofenceAlerts';
 
 const router = createBrowserRouter([
   {
@@ -44,11 +51,11 @@ const router = createBrowserRouter([
     children: [
       { path: 'login', element: <VendorLogin /> },
       { path: 'signup', element: <VendorSignup /> },
-      { path: 'dashboard', element: <VendorDashboard /> },
+      { path: 'dashboard', element: <Dashboard /> },
       { path: 'inventory', element: <Inventory /> },
       { path: 'vehicle/new', element: <VehicleForm /> },
       { path: 'vehicle/:id/edit', element: <VehicleForm /> },
-      { path: 'bookings', element: <VendorBookings /> },
+      { path: 'bookings', element: <Bookings /> },
       { path: 'analytics', element: <Analytics /> },
       { path: 'geofence', element: <GeofenceAlerts /> },
     ],
